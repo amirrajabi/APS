@@ -68,6 +68,8 @@
   "dependencies": {
     "angular": "^1.5.8",
     "angular-resource": "^1.5.8",
-    "foundation-sites": "^6.2.3"
+    "foundation-sites": "^6.2.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }

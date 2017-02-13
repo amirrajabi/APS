@@ -23,6 +23,7 @@ var card = {
     <!-- call simple-section-header component and inject data from back end -->
     <%- include('components/header/simple-section-header',
     {
+        'id': 'hero',
         'class_name': 'hero',
         'title': 'Truth? What truth?',
         'body': header.body
@@ -32,6 +33,7 @@ var card = {
     <!-- call card component and inject data from back end -->
     <%- include('components/header/card',
     {
+        'id': 'card',
         'class_name': 'card',
         'header': card.header,
         'title': card.title,

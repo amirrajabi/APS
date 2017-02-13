@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": "eslint:recommended",
+  "rules": {
+    //overriding the default list
+    //0 = no error; 1 = warning; 2 = error
+    //console = warning
+    "no-console": 1,
+    "no-unused-vars": 1
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  }
+}

@@ -1,0 +1,53 @@
+$config: (
+        'gutter': 20px,
+        'gutter-large': 100px,
+        'borderRadius': 5px,
+        'iconSize': 60px,
+        'color': (
+                'transparent': rgba(0, 0, 0, 0),
+                'white': #fff,
+                'black': #000,
+                'social': (
+                        'facebook' : #3460a1,
+                        'twitter' : #28aae1
+                )
+        ),
+        'width': (
+                'full': 100%
+        ),
+        'height': (
+                'full': 100%
+        ),
+        'family': (
+                'heading': unquote("'Source Sans Pro', sans-serif"),
+                'body': unquote("'Source Sans Pro', sans-serif"),
+                'quote': unquote("'Merriweather', serif;"),
+        ),
+        'size': (
+                'body':      16px,
+                'heading-1': 50px,
+                'heading-2': 40px,
+                'heading-3': 25px,
+                'heading-4': 25px,
+                'heading-5': 14px,
+                'body-1':    20px,
+                'body-2':    16px,
+                'body-3':    14px
+        ),
+        'weight': (
+                'x-light':   100,
+                'light':     300,
+                'regular':   400,
+                'semiBold':  600,
+                'bold':      700,
+                'black':     900
+        ),
+        'screen': (
+        ),
+        'diameter': (
+        )
+);
+
+@function config($keys...) {
+  @return map-get-deep($config, $keys);
+}

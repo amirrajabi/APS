@@ -1,0 +1,31 @@
+$component: "grid";
+
+.#{$component} {
+
+  display: flex;
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--space {
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &--between {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--end {
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+}

@@ -1,0 +1,44 @@
+<%
+
+var header = {
+    'body': 'Do not you want to take a leap of faith? Or become an old man, filled with regret, waiting to die alone!'
+}
+
+var card = {
+    'header': 'Amir This is a header',
+    'title': 'This is a card.',
+    'body': 'It has an easy to override visual style, and is appropriately subdued.'
+}
+
+%>
+
+
+
+
+
+<%- include('partials/head', {}) %>
+
+<section class="align-center">
+
+    <!-- call simple-section-header component and inject data from back end -->
+    <%- include('components/header/simple-section-header',
+    {
+        'class_name': 'hero',
+        'title': 'Truth? What truth?',
+        'body': header.body
+    }
+    ); %>
+
+    <!-- call card component and inject data from back end -->
+    <%- include('components/header/card',
+    {
+        'class_name': 'card',
+        'header': card.header,
+        'title': card.title,
+        'body': card.body
+    }
+    ); %>
+
+</section>
+
+<%- include('partials/foot', {}) %>
